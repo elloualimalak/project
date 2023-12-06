@@ -1,17 +1,28 @@
-public class departement {
+public class module {
     private String intitule;
-    private enseignant responsable;
+    private filliere filliere;
+    private enseignant professeur;
     public void setIntitule(String intitule){
         this.intitule=intitule;
     }
     public String getIntitule() {
         return intitule;
     }
-    public void setResponsable(enseignant responsable){
-        this.responsable=responsable;
+
+    public void setFilliere(filliere filliere) {
+        this.filliere = filliere;
     }
-    public enseignant getResponsable(){
-        return responsable;
+
+    public filliere getFilliere() {
+        return filliere;
+    }
+
+    public void setProfesseur(enseignant professeur) {
+        this.professeur = professeur;
+    }
+
+    public enseignant getProfesseur() {
+        return professeur;
     }
 }
 

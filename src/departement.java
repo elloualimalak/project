@@ -1,4 +1,4 @@
-public class depart {
+public class departement {
     private String intitule;
     private enseignant responsable;
     public void setIntitule(String intitule){
