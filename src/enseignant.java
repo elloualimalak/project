@@ -3,7 +3,7 @@ public class enseignant {
     private String prenom;
     private String email;
     private String grade;
-    private depart Departement;
+    private departement Departement;
     public void setNom(String nom){
         this.nom=nom;
     }
@@ -35,11 +35,11 @@ public class enseignant {
         return grade;
     }
 
-    public void setDepartement(depart departement) {
+    public void setDepartement(departement departement) {
         Departement = departement;
     }
 
-    public depart getDepartement() {
+    public departement getDepartement() {
         return Departement;
     }
 }

@@ -1,7 +1,7 @@
 public class filliere {
     private String intitule;
     private enseignant responsable;
-    private depart Departement;
+    private departement Departement;
 
     public void setIntitule(String intitule) {
         this.intitule = intitule;
@@ -11,11 +11,11 @@ public class filliere {
         return intitule;
     }
 
-    public void setDepartement(depart departement) {
+    public void setDepartement(departement departement) {
         Departement = departement;
     }
 
-    public depart getDepartement() {
+    public departement getDepartement() {
         return Departement;
     }
 
