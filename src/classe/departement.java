@@ -1,3 +1,5 @@
+package classe;
+
 public class departement {
     private String intitule;
     private enseignant responsable;

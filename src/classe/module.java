@@ -1,3 +1,7 @@
+package classe;
+
+import classe.enseignant;
+
 public class module {
     private String intitule;
     private filliere filliere;

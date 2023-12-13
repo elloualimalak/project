@@ -1,3 +1,7 @@
+package classe;
+
+import classe.departement;
+
 public class enseignant {
     private String nom;
     private String prenom;

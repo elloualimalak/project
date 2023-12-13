@@ -1,3 +1,5 @@
+package controle;
+
 public class controlledepartement {
     public static void voirmenu(){
         System.out.println("---- Départements ----");
@@ -8,7 +10,7 @@ public class controlledepartement {
         System.out.println("Pour modifier un département taper 3");
         System.out.println("Pour supprimer un département taper 4");
         System.out.println("Pour retourner au menu principal taper 0");
-        int op =project.Main.getIntInput("Veuillez sélectionner une option : ");
+        int op = project.Main.getIntInput("Veuillez sélectionner une option : ");
         switch (op){
             case 1:
                 creerDepartement();

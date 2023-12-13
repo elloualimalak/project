@@ -1,3 +1,8 @@
+package classe;
+
+import classe.departement;
+import classe.enseignant;
+
 public class filliere {
     private String intitule;
     private enseignant responsable;

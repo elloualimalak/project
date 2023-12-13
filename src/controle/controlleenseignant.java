@@ -1,12 +1,14 @@
+package controle;
+
 public class controlleenseignant {
     public static void voirmenu() {
         System.out.println("---- Enseignants ----");
 
 
-        System.out.println("Pour ajouter un enseignant taper 1");
+        System.out.println("Pour ajouter un classe.enseignant taper 1");
         System.out.println("Pour afficher les enseignants taper 2");
-        System.out.println("Pour modifier un enseignant taper 3");
-        System.out.println("Pour supprimer un enseignant taper 4");
+        System.out.println("Pour modifier un classe.enseignant taper 3");
+        System.out.println("Pour supprimer un classe.enseignant taper 4");
         System.out.println("Pour retourner au menu principal taper 0");
         int opt = project.Main.getIntInput("Veuillez sélectionner une option : ");
         switch (opt) {

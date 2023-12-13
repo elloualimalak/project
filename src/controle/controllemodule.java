@@ -1,12 +1,14 @@
+package controle;
+
 public class controllemodule {
     public static void showmenu(){
         System.out.println("---- Modules ----");
 
 
-        System.out.println("Pour ajouter un module taper 1");
+        System.out.println("Pour ajouter un classe.module taper 1");
         System.out.println("Pour afficher les modules taper 2");
-        System.out.println("Pour modifier un module taper 3");
-        System.out.println("Pour supprimer un module taper 4");
+        System.out.println("Pour modifier un classe.module taper 3");
+        System.out.println("Pour supprimer un classe.module taper 4");
         System.out.println("Pour retourner au menu principal taper 0");
         int optio = project.Main.getIntInput("Veuillez sélectionner une option : ");
         switch (optio) {
