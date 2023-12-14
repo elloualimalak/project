@@ -1,7 +1,7 @@
 package controle;
 
 public class controlefilliere {
-    public static void showmenu() {
+    public static void voirmenu() {
         System.out.println("---- Fillieres ----");
 
 
@@ -10,7 +10,7 @@ public class controlefilliere {
         System.out.println("Pour modifier une classe.filliere taper 3");
         System.out.println("Pour supprimer une classe.filliere taper 4");
         System.out.println("Pour retourner au menu principal taper 0");
-        int optio = project.Main.getIntInput("Veuillez sélectionner une option : ");
+        int optio = project.avoirInt("Veuillez sélectionner une option : ");
         switch (optio) {
             case 1:
                 creerFilliere();
@@ -24,6 +24,8 @@ public class controlefilliere {
             case 4:
                 supprimerFilliere();
                 break;
+            default:
+                project.voirmenuprincipal();
         }
     }
     public static void  creerFilliere(){

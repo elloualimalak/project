@@ -10,7 +10,7 @@ public class controlleenseignant {
         System.out.println("Pour modifier un classe.enseignant taper 3");
         System.out.println("Pour supprimer un classe.enseignant taper 4");
         System.out.println("Pour retourner au menu principal taper 0");
-        int opt = project.Main.getIntInput("Veuillez sélectionner une option : ");
+        int opt = project.Main.avoirInt("Veuillez sélectionner une option : ");
         switch (opt) {
             case 1:
                 creerEnseignant();
@@ -24,6 +24,8 @@ public class controlleenseignant {
             case 4:
                 supprimerEnseignant();
                 break;
+            default:
+                project.voirmenuprincipal();
         }
     }
     public static void creerEnseignant(){

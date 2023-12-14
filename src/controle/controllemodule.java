@@ -1,7 +1,7 @@
 package controle;
 
 public class controllemodule {
-    public static void showmenu(){
+    public static void voirmenu(){
         System.out.println("---- Modules ----");
 
 
@@ -10,7 +10,7 @@ public class controllemodule {
         System.out.println("Pour modifier un classe.module taper 3");
         System.out.println("Pour supprimer un classe.module taper 4");
         System.out.println("Pour retourner au menu principal taper 0");
-        int optio = project.Main.getIntInput("Veuillez sélectionner une option : ");
+        int optio = project.avoirInt("Veuillez sélectionner une option : ");
         switch (optio) {
             case 1:
                 creerModule();
@@ -24,6 +24,8 @@ public class controllemodule {
             case 4:
                 supprimerModules();
                 break;
+            default:
+                project.voirmenuprincipal();
         }
     }
     public static void creerModule(){

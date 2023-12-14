@@ -1,7 +1,7 @@
 package controle;
-
+import Project;
 public class controlleetudiant {
-    public static void showmenu(){
+    public static void voirmenu(){
         System.out.println("---- Etudiants ----");
 
 
@@ -10,7 +10,7 @@ public class controlleetudiant {
         System.out.println("Pour modifier un classe.etudiant taper 3");
         System.out.println("Pour supprimer un classe.etudiant taper 4");
         System.out.println("Pour retourner au menu principal taper 0");
-        int opti = project.Main.getIntInput("Veuillez sélectionner une option : ");
+        int opti = Project.avoirInt("Veuillez sélectionner une option : ");
         switch (opti) {
             case 1:
                 creerEtudiant();
@@ -24,6 +24,8 @@ public class controlleetudiant {
             case 4:
                 supprimerEtudiant();
                 break;
+            default:
+                project.voirmenuprincipal();
         }
     }
     public static void creerEtudiant(){
