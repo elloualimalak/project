@@ -4,9 +4,7 @@ import java.util.Scanner;
 
 
 public class Project {
-    public static void voirmenuprincipal() {
 
-    }
 
     public static int avoirInt(String... m) {
         Scanner s = new Scanner(System.in);
