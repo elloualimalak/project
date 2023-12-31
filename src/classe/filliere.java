@@ -4,15 +4,16 @@ import classe.departement;
 import classe.enseignant;
 
 public class filliere {
-    private String intitule;
-    private enseignant responsable;
-    private departement Departement;
+    private static int id;
+    private static String intitule;
+    private static enseignant responsable;
+    private static departement Departement;
 
     public void setIntitule(String intitule) {
         this.intitule = intitule;
     }
 
-    public String getIntitule() {
+    public static String getIntitule() {
         return intitule;
     }
 
@@ -20,7 +21,7 @@ public class filliere {
         Departement = departement;
     }
 
-    public departement getDepartement() {
+    public static departement getDepartement() {
         return Departement;
     }
 
@@ -28,7 +29,19 @@ public class filliere {
         this.responsable = responsable;
     }
 
-    public enseignant getResponsable() {
+    public static enseignant getResponsable() {
         return responsable;
+    }
+
+    public static void setId(int id) {
+        filliere.id = id;
+    }
+
+    public static int getId() {
+        return id;
+    }
+
+    public filliere getFilliere() {
+        return null;
     }
 }

@@ -1,50 +1,67 @@
 package classe;
 
 public class etudiant {
-    private String nom;
-    private String prenom;
-    private String email;
-    private int apogee;
-    private filliere Filliere;
 
-    public void setFilliere(filliere filliere) {
+    private static String nom;
+    private static int id;
+    private static String prenom;
+    private static String email;
+    private static int apogee;
+    private static filliere Filliere;
+
+    public etudiant() {
+    }
+
+    public etudiant(int id, String nom, String responsable, String departement) {
+    }
+
+
+    public static void setFilliere(filliere filliere) {
         Filliere = filliere;
     }
 
-    public filliere getFilliere() {
+    public static filliere getFilliere() {
         return Filliere;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public static void setEmail(String email) {
+        etudiant.email = email;
     }
 
     public String getEmail() {
         return email;
     }
 
-    public void setApogee(int apogee) {
-        this.apogee = apogee;
+    public static void setApogee(int apogee) {
+        etudiant.apogee = apogee;
     }
 
-    public int getApogee() {
+    public static int getApogee() {
         return apogee;
     }
 
-    public void setPrenom(String prenom) {
-        this.prenom = prenom;
+    public static void setPrenom(String prenom) {
+        etudiant.prenom = prenom;
     }
 
-    public String getPrenom() {
+    public static String getPrenom() {
         return prenom;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public static void setNom(String nom) {
+        etudiant.nom = nom;
     }
 
-    public String getNom() {
+    public static String getNom() {
         return nom;
+    }
+
+    public static void setId(int id) {
+        etudiant.id = id;
+    }
+
+    public static int getId() {
+        return id;
     }
 }
 

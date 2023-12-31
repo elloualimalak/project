@@ -1,15 +1,22 @@
 package classe;
 
-import classe.departement;
-
 public class enseignant {
-    private String nom;
+    private static int id;
+    private static String nom;
     private String prenom;
     private String email;
     private String grade;
     private departement Departement;
-    public void setNom(String nom){
-        this.nom=nom;
+
+    public enseignant(int id, String nom, String prenom, String grade) {
+    }
+
+    public enseignant() {
+
+    }
+
+    public static void setNom(String nom) {
+        enseignant.nom = nom;
     }
 
     public String getNom() {
@@ -27,7 +34,8 @@ public class enseignant {
     public void setEmail(String email) {
         this.email = email;
     }
-    public String getEmail(){
+
+    public String getEmail() {
         return email;
     }
 
@@ -46,4 +54,14 @@ public class enseignant {
     public departement getDepartement() {
         return Departement;
     }
+
+    public static void setId(int id) {
+        enseignant.id = id;
+    }
+
+    public static int getId() {
+        return id;
+    }
 }
+
+

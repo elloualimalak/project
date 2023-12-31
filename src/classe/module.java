@@ -1,15 +1,20 @@
 package classe;
 
-import classe.enseignant;
-
 public class module {
-    private String intitule;
-    private filliere filliere;
-    private enseignant professeur;
+    private static int id;
+    private static String intitule;
+    private static filliere filliere;
+    private static enseignant professeur;
+
+    public module() {
+    }
+
+
+
     public void setIntitule(String intitule){
         this.intitule=intitule;
     }
-    public String getIntitule() {
+    public static String getIntitule() {
         return intitule;
     }
 
@@ -17,7 +22,7 @@ public class module {
         this.filliere = filliere;
     }
 
-    public filliere getFilliere() {
+    public static filliere getFilliere() {
         return filliere;
     }
 
@@ -25,8 +30,16 @@ public class module {
         this.professeur = professeur;
     }
 
-    public enseignant getProfesseur() {
+    public static enseignant getProfesseur() {
         return professeur;
+    }
+
+    public static void setId(int id) {
+        module.id = id;
+    }
+
+    public static int getId() {
+        return id;
     }
 }
 
