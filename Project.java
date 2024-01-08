@@ -32,7 +32,7 @@ public class project {
                 controlleetudiant.voirmenu();
                 break;
             default:
-                // code block
+                
         }
     }
 
@@ -53,8 +53,6 @@ public class project {
         return T;
 
     }
-    public static void main(String[] args){
-
-    }
+   
 }
 
